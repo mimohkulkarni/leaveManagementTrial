@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_otp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/login_btn_back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/tab_color2"
+        android:gravity="center"
+        android:paddingTop="@dimen/applicationMargin"
+        android:paddingBottom="@dimen/applicationMargin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/otp_sent_to_registered_mobile_number"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/ETotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="250dp"
+            android:lineSpacingExtra="10dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textSize="30sp"
+            android:layout_marginTop="@dimen/applicationMargin"
+            android:layout_marginBottom="@dimen/applicationMargin"
+            android:hint="@string/otp_placeholder"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/TVtimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/BTNverify"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/verify"
+            android:textSize="18sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

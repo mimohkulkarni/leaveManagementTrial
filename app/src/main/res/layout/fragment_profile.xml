@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/login_btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IVprofilePhoto"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/no_image"
+                android:contentDescription="@string/welcome_user" />
+
+            <TextView
+                android:id="@+id/TVname"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_user"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <RelativeLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/TVpass"
+                    style="@style/viewParent"
+                    android:text="@string/change_password"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/pf_no"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETpfno"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_mobile_no"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETmobile"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_pan_no"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETpanno"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_designation"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETdesg"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_birth_date"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETdob"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_station_name"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETstation"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_department"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETdept"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_date_of_application"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETdop"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_since_in_section"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETsincesection"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/_7th_pay"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ET7pay"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/_7th_pay_level"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ET7paylevel"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_section"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETsection"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_category"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETcategory"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parentProfile"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/hint_next_increment"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETnxctinc"
+                    style="@style/modifiedEditText"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:enabled="false"
+                    android:autofillHints="yes" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

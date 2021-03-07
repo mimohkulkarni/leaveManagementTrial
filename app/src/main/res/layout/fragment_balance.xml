@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.leave.SelectSanctionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/headerTextSize"
+            android:text="@string/leave_balance"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <TableLayout
+            style="@style/card"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/applicationMargin">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/rowEditText.start"
+                    android:hint="@string/cl_leave">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETclLeave"
+                        style="@style/modifiedEditText"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/rowEditText.end"
+                    android:hint="@string/apl_leave">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETaplLeave"
+                        style="@style/modifiedEditText"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/applicationMargin">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/rowEditText.start"
+                    android:hint="@string/ccl_leave">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETcclLeave"
+                        style="@style/modifiedEditText"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/rowEditText.end"
+                    android:hint="@string/hapl_leave">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EThaplLeave"
+                        style="@style/modifiedEditText"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/applicationMargin">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/rh_leave">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETrhLeave"
+                        style="@style/modifiedEditText"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

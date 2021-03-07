@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/irlogo"
+            android:contentDescription="@string/welcome_user"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:text="@string/leave_management"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/TVforgot"
+            style="@style/viewParent"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/courtesy_of_mangesh_kulkarni"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/smallHeaderTextSize" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            style="@style/viewParent"
+            android:text="@string/by_mimoh_kulkarni"
+            android:textColor="@color/primaryTextColor"
+            android:layout_gravity="center"
+            android:textSize="@dimen/smallHeaderTextSize"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

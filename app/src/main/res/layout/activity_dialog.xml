@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        style="@style/viewParent.headerText.NoMode"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/headerTextSize"
+        android:text="@string/leave_details"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/login_btn_back"
+        android:layout_marginTop="@dimen/applicationMargin">
+
+        <TextView
+            android:id="@+id/TVleavetype"
+            style="@style/dialogTextView"
+            android:text="@string/nature_of_leave"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/TVstatus"
+            style="@style/dialogTextView"
+            android:text="@string/leave_status"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:orientation="horizontal"
+        android:background="@color/tab_color2">
+
+        <TextView
+            android:id="@+id/TVdisplay_leavetype"
+            style="@style/dialogTextView"
+            android:text="@string/welcome_user"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TVdisplay_status"
+            style="@style/dialogTextView"
+            android:text="@string/welcome_user"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/applicationMargin"
+        android:weightSum="2"
+        android:background="@color/login_btn_back">
+
+        <TextView
+            android:id="@+id/TVleavefrom"
+            style="@style/dialogTextView"
+            android:text="@string/leave_from"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/TVleaveto"
+            style="@style/dialogTextView"
+            android:text="@string/leave_to"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/tab_color2">
+
+        <TextView
+            android:id="@+id/TVdisplay_leavefrom"
+            style="@style/dialogTextView"
+            android:text="@string/welcome_user"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/TVdisplay_leaveto"
+            style="@style/dialogTextView"
+            android:text="@string/welcome_user"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/applicationMargin">
+
+        <TextView
+            android:id="@+id/TVforward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pending_with"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:background="@color/login_btn_back"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/TVdisplay_forward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_user"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:background="@color/tab_color2"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_button"
+        style="@style/loginButton"
+        android:layout_marginTop="@dimen/applicationMargin"
+        android:layout_gravity="center"
+        android:text="@string/close"/>
+
+</LinearLayout>

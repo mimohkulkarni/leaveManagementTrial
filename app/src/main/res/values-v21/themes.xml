@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LeaveButton" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:minHeight">120dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:textSize">@dimen/leaveButtonTextSize</item>
+        <item name="android:backgroundTint">@color/login_btn_back</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="loginButton" parent="Button">
+        <item name="android:backgroundTint">@color/login_btn_back</item>
+    </style>
+
+    <style name="resetButton" parent="Button">
+        <item name="android:backgroundTint">@color/reset_btn_back</item>
+    </style>
+
+    <style name="DropdownMenu">
+        <item name="android:background">@color/white</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:backgroundTintMode">src_over</item>
+    </style>
+</resources>

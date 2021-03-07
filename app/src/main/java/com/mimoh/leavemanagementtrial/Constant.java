@@ -1,0 +1,47 @@
+package com.mimoh.leavemanagementtrial;
+
+public class Constant {
+    public static final String NO_CONNECTION_MESSAGE = "Looks like there is no connection. Please check if you are connected to the network and restart the app.";
+    public static final String NO_CONNECTION_TITLE = "No Connection";
+    static final String TRANSFORMATION = "AES/CBC/PKCS5Padding";
+    static final String KEY_TRANSFORMATION = "AES/ECB/PKCS5Padding";
+    static final String SECRET_KEY_HASH_TRANSFORMATION = "SHA-256";
+    static final String CHARSET = "UTF-8";
+    static final String SECURE_KEY = "MYsamsung@123";
+    public static final String NA = "N.A.";
+    public static final String myFormat = "dd/MM/yyyy";
+    public static final String Confirm_msg = "Confirmation Message";
+    public static final String HalfFull = "Half Day or Full Day?";
+    public static final String HalfDay = "Half Day";
+    public static final String FullDay = "Full Day";
+    public static final String APPLICATION_TAG = "leave_application";
+    public static final String PENDING_TAG = "leave_pending";
+    public static final String BALANCE_TAG = "leave_balance";
+    public static final String SANCTION_TAG = "leave_sanction";
+    public static final String SELECT_SANCTION_TAG = "leave_select_sanction";
+    public static final String TAG = "tag";
+    public static final String noOfDays = "No of days: ";
+    public static final String RESULT_ARRAY = "result";
+    public static final String PFNO = "pfno";
+    public static final String NAME = "name";
+    public static final String PANNO = "panno";
+    public static final String MOBILE = "mobile";
+    public static final String DESG = "desg";
+    public static final String BDATE = "bdate";
+    public static final String STATION = "station";
+    public static final String DEPT = "dept";
+    public static final String LEVEL = "level";
+    public static final String APDATE = "apdate";
+    public static final String DSEC = "dsec";
+    public static final String VIIPAY = "viipay";
+    public static final String VIILVL = "viilvl";
+    public static final String SEC = "sec";
+    public static final String CATG = "catg";
+    public static final String NEXTINC = "nxtinc";
+    public static final String NOT_EMPTY = "Cannot Be Empty";
+    public static final String REQUIRED = "Required Field";
+    public static final String PLEASE_WAIT = "Please Wait...";
+    public static final String SELECT = "Select";
+    public static final String VAL_0 = "0";
+    public static final String EXIT = "Exit";
+}

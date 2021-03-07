@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LeaveButton" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:minHeight">120dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:textSize">@dimen/leaveButtonTextSize</item>
+        <item name="android:background">@color/login_btn_back</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="Button" parent="parent">
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">18dp</item>
+    </style>
+
+    <style name="rowEditText.start" parent="rowEditText">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="rowEditText.end" parent="rowEditText">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="dialogTextView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>

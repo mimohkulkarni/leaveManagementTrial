@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LeaveFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/BTNleaveApplication"
+            android:layout_height="wrap_content"
+            android:text="@string/leave_application"
+            app:icon="@drawable/ic_baseline_create_48"
+            style="@style/LeaveButton" />
+
+        <Button
+            android:id="@+id/BTNleaveBalance"
+            android:layout_height="wrap_content"
+            android:text="@string/leave_balance"
+            app:icon="@drawable/ic_baseline_create_48"
+            style="@style/LeaveButton" />
+
+        <Button
+            android:id="@+id/BTNleavePending"
+            android:layout_height="wrap_content"
+            android:text="@string/pending_leaves"
+            app:icon="@drawable/ic_baseline_create_48"
+            style="@style/LeaveButton" />
+
+        <Button
+            android:id="@+id/BTNleaveSanction"
+            android:layout_height="wrap_content"
+            android:text="@string/sanction_leaves"
+            app:icon="@drawable/ic_baseline_create_48"
+            style="@style/LeaveButton" />
+
+    </LinearLayout>
+
+</FrameLayout>
